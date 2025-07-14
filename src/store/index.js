@@ -24,7 +24,7 @@ export default new Vuex.Store({
       commit('setUser', user);
     },
     initializeWebSocket({ commit }) {
-      const ws = new WebSocket('ws://49.234.27.225:8765');
+      const ws = new WebSocket('ws://localhost:8765');
       ws.onopen = () => {
         console.log('WebSocket connection established');
       };
